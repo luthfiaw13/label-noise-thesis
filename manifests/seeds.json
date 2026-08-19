@@ -1,0 +1,19 @@
+{
+    "screening_seeds": [
+        17,
+        41,
+        73
+    ],
+    "confirmatory_seeds": [
+        17,
+        41,
+        73,
+        109,
+        137,
+        181,
+        233
+    ],
+    "subset_seed": 314159,
+    "status": "PREREGISTERED",
+    "note": "Seed list ditetapkan sebelum main experimental results dianalisis."
+}
