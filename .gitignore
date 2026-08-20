@@ -32,8 +32,8 @@ Thumbs.db
 # Dataset
 # Jangan upload CIFAR/CIFAR-N ke repository
 # ============================================================
-data/
-datasets/
+/data/
+/datasets/
 *.tar.gz
 *.zip
 
@@ -50,14 +50,14 @@ datasets/
 *.npy
 *.npz
 
-outputs/
-artifacts/
+/outputs/
+/artifacts/
 
 # ============================================================
 # Experiment Tracking
 # ============================================================
-wandb/
-mlruns/
+/wandb/
+/mlruns/
 
 # ============================================================
 # Temporary Files
