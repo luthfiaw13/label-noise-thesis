@@ -1,0 +1,48 @@
+{
+    "dataset": {
+        "synthetic_noise_experiment": {
+            "dataset": "CIFAR-10",
+            "noise_protocol": [
+                "Symmetric Class-Balanced Corruption",
+                "Asymmetric Pair-Flip Class-Balanced Corruption"
+            ]
+        },
+        "human_noise_validation": {
+            "dataset": "CIFAR-10N",
+            "usage": "Real Human Annotation Noise Validation"
+        }
+    },
+    "model": {
+        "models": [
+            "ResNet18",
+            "ResNet34",
+            "ResNet50"
+        ],
+        "input_size": "32x32",
+        "classes": 10,
+        "architecture": "CIFAR-compatible ResNet"
+    },
+    "training": {
+        "optimizer": "SGD",
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "Warmup + Cosine Annealing",
+        "batch_size": 256,
+        "mixed_precision": true,
+        "seed": 17
+    },
+    "evaluation": {
+        "metrics": [
+            "Accuracy",
+            "Precision",
+            "Recall",
+            "Macro F1",
+            "Loss",
+            "Confusion Matrix",
+            "Kappa Coefficient"
+        ],
+        "validation": "Validation split only",
+        "test_usage": "Only final evaluation"
+    }
+}
